@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-shadow: 0px 1px 2px gray;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    width: 70vw;
+    margin-inline: auto;
+    margin-top: 20px;
+    min-width: 230px;
+    font-family: poppins;
+}
+
+main>div {
+    width: 100%;
+}
+
+.left {
+    padding: 20px 10px;
+    color: darkviolet;
+}
+
+input{
+    color:darkviolet;;
+}
+
+.form-items {
+    margin-bottom: 20px;
+}
+
+.left input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.tip-container div {
+    display: inline;
+}
+
+.tip-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    gap: 5px;
+    font-size: 0.8em;
+    cursor: grab;
+}
+
+.disable {
+    cursor: not-allowed;
+}
+
+.tip {
+    text-align: center;
+    text-align: center;
+    background-color: #edd9d9;
+    padding: 0.5em 0;
+    color: #9b9292;
+    border-radius: 3px;
+}
+
+.tip .disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+.custom {
+    outline: none;
+    border: none;
+    background: #bfbfbf;
+    padding: 5px 10px;
+    margin-block: 10px;
+    width: 100%;
+}
+
+.bill-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #a782b79e;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-top: 5px;
+}
+
+.bill-input input {
+    color: darkviolet;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+#generate-bill {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    max-width: 200px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+}
+
+#generate-bill:disabled,
+#reset:disabled {
+    background-color: #bbbbbb;
+    color: #5b5b5b;
+}
+
+.right {
+    padding: 20px 30px;
+    background-color: #6958ab;
+    border-radius: 6px;
+    color: wheat;
+    height: fit-content;
+
+}
+
+.right .items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#reset {
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 1200%;
+}
+
+.active {
+    background-color: blueviolet;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    padding: 15px;
+}
+
+@media (max-width: 720px) {
+    main {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        flex-direction: column;
+    }
+}
